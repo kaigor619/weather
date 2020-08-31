@@ -1,7 +1,7 @@
 export default class WeatherService {
   static _apiKey = 'e183742f468c7c6c9d2a0eb48e5c679f'
-  static _apiBase = 'https://api.openweathermap.org/data/2.5/weather'
-  static _apiImg = 'https://openweathermap.org/img/wn/'
+  static _apiBase = 'http://api.openweathermap.org/data/2.5/weather'
+  static _apiImg = 'http://openweathermap.org/img/wn/'
 
   static async getWeatherByCity(city) {
     let res = await fetch(
